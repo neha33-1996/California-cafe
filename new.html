@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+h1{
+  font-size: 40px;
+  margin: auto;
+  padding-top: 8px;
+}
+.container{
+  background: rgb(21, 133, 238);
+  color: white;
+  min-height: 40vh;
+  text-align: center;
+  
+  padding-top: 40px;
+  margin-bottom: 50px;
+}
+#myInput{
+  padding-top: 8px;
+  margin: auto;
+  margin-top: 40px;
+  width: 60%;
+  border-radius: 18px;
+}
+th{
+  background: rgb(37, 34, 34);
+  color: white;
+}
+#myTable {
+  border-collapse: collapse;
+  width: 80%;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin: auto;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1><strong>California Cafe Directory</strong> </h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search your favourite Cafes! " title="Type in a name">
+</div>
+<table id="myTable">
+  <tr class="header">
+    <th style="width:10%;">S No</th>
+    <th style="width:20%;">Cafe Name</th>
+    <th style="width:20%;">Address</th>
+    <th style="width:10%;">Postal Code</th>
+    <th style="width:20%;">Lat</th>
+    <th style="width:20%;">Long</th>
+  </tr>
+  <tr>
+    <td class="column1">1</td>
+    <td class="column2">Bazaar Cafe</td>
+    <td class="column3">45250 Worth Avenue, Unit A</td>
+    <td class="column4">201619</td>
+    <td class="column5">36.1152</td>
+    <td class="column6">117.521</td>
+  </tr>
+  <tr>
+    <td class="column1">2</td>
+    <td class="column2">Ashley's Cafe</td>
+    <td class="column3">1B Ambey Mantion</td>
+    <td class="column4">29087</td>
+    <td class="column5">31.21</td>
+    <td class="column6">119.7</td>
+  </tr>
+  <tr>
+    <td class="column1">3</td>
+    <td class="column2">Avenue Cafe</td>
+    <td class="column3">7S Three Notch Road</td>
+    <td class="column4">20619</td>
+    <td class="column5">36.83</td>
+    <td class="column6">119.6</td>
+  </tr>
+  <tr>
+    <td class="column1">4</td>
+    <td class="column2">Hi-Lo Cafe</td>
+    <td class="column3">22803 Gunston Dr  Lexington Park</td>
+    <td class="column4">20688</td>
+    <td class="column5">36.7788</td>
+    <td class="column6">119.979</td>
+  </tr>
+  <tr>
+    <td class="column1">5</td>
+    <td class="column2">California Chicken Cafe</td>
+    <td class="column3">1B Macarthur Blvd</td>
+    <td class="column4">20619</td>
+    <td class="column5">38.1781</td>
+    <td class="column6">118.4171</td>
+  </tr>
+  <tr>
+    <td class="column1">6</td>
+    <td class="column2">Corner Bakery Cafe</td>
+    <td class="column3">60H Solomos Island Road</td>
+    <td class="column4">20688</td>
+    <td class="column5">36.7783</td>
+    <td class="column6">119.4179</td>
+  </tr>
+  <tr>
+    <td class="column1">7</td>
+    <td class="column2">Philz Coffee</td>
+    <td class="column3">225Macarthur Blvd</td>
+    <td class="column4">20687</td>
+    <td class="column5">35.77813</td>
+    <td class="column6">119.466</td>
+  </tr>
+  <tr>
+    <td class="column1">8</td>
+    <td class="column2">The Alma Gathering Cafe</td>
+    <td class="column3">2803 Gunston Dr Lexington Park</td>
+    <td class="column4">20688</td>
+    <td class="column5">35.7788/td>
+    <td class="column6">119.970</td>
+  </tr>
+  <tr>
+    <td class="column1">9</td>
+    <td class="column2">Lakeland Memory Cafe</td>
+    <td class="column3">60H Solomos Island Road</td>
+    <td class="column4">20619</td>
+    <td class="column5">37.1192</td>
+    <td class="column6">118.521</td>
+  </tr>
+  <tr>
+    <td class="column1">10</td>
+    <td class="column2">Baron Memory Cafe</td>
+    <td class="column3">4520 Worth Avenue Unit A</td>
+    <td class="column4">201617</td>
+    <td class="column5">38.1992</td>
+    <td class="column6">116.529</td>
+  </tr>
+  <tr>
+    <td class="column1">11</td>
+    <td class="column2">Lakeshores Memory Cafe</td>
+    <td class="column3">22809 Gunston Dr Lexington</td>
+    <td class="column4">201699</td>
+    <td class="column5">38.9952</td>
+    <td class="column6">127.588</td>
+  </tr>
+  <tr>
+    <td class="column1">12</td>
+    <td class="column2">Monarch Memory Cafe</td>
+    <td class="column3">45250 Worth Avenue, Unit A</td>
+    <td class="column4">201619</td>
+    <td class="column5">36.0912</td>
+    <td class="column6">123.7981</td>
+  </tr>
+ 
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
